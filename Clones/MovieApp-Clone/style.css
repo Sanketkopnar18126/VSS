@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(44, 43, 43);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header{
+
+    width: 80%;
+    height: 90%;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 25px -1px black;
+    
+    position: relative;
+   
+}
+
+header::before{
+content: '';
+position: absolute;
+background-image: url("./img/money heist1.jpg");
+width: 100%;
+height: 100%;
+background-repeat: no-repeat ;
+background-position: center;
+background-size: cover;
+opacity: 0.6;
+z-index: -1;
+
+}
+header::after{
+    content: '';
+    position: absolute;
+    background: linear-gradient(360deg, black, transparent);
+    width: 100%;
+    height: 100%;
+   z-index: -1;
+    
+    }
+
+    header video{
+        position: absolute;
+    top: -47%;
+    width: 120%;
+    height: 190%;
+    z-index: -1;
+      
+
+    }
+    header nav{
+        width: 100%;
+        height: 10%;
+        border: 1px solid white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+  .logo-ul ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+    margin-left: 25px;
+ 
+
+  }
+
+
+  .logo-ul img{
+    width: 86px;
+  }
+
+
+  .logo-ul ul a{
+  text-decoration-line: none;
+color: white;
+font-size: 15px;
+font-weight: bold;
+
+  }
+
+  .logo-ul ul a:hover{
+    color: red;
+
+  }
+
+  .logo-ul {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    height: 64px;
+  
+
+  }
+  #search-input{
+    height: 29px;
+    outline: none;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 34px;
+    width: 250px;
+    background-color: rgb(140 132 132);
+  }
+  #search-input::placeholder{
+  color: white;
+  }

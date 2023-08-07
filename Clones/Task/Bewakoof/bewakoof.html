@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .header1 {
+        /* background-color: black; */
+        height: 97px;
+        /* width: 1536px; */
+      }
+
+      .header-child1 {
+        background: #eee;
+        /* width: 1536px; */
+        height: 26px;
+        display: flex;
+        display: flex;
+        justify-content: space-around;
+      }
+      .rightside-element {
+        display: flex;
+        width: 35%;
+        /* background: blue; */
+        gap: 12px;
+        align-items: center;
+      }
+      .headerchild1-element {
+        /* width: 116px; */
+        height: 20px;
+        /* background-color: darksalmon; */
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 13px;
+      }
+      .leftelement-child {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+      }
+
+      .header-child2 {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        /* width: 1536px; */
+        height: 57px;
+        display: flex;
+        gap: 192px;
+        justify-content: end;
+        align-items: center;
+      }
+      .header-internal1 {
+        width: 532px;
+        height: 40px;
+        /* background-color: blueviolet; */
+        display: flex;
+        gap: 31px;
+      }
+      .internal-element1 {
+        width: 170px;
+        height: 40px;
+        /* background-color: red; */
+        margin-left: 40px;
+      }
+      .internal-element1 img {
+        width: 159px;
+        padding: 6px;
+      }
+      .for-element234 {
+        display: flex;
+        gap: 29px;
+        align-items: center;
+      }
+      .internal-element2 {
+        width: 50px;
+        height: 20px;
+        /* background-color: rgb(123, 255, 0); */
+        font-size: 18px;
+      }
+      .internal-element1 input {
+        background-color: transparent;
+      }
+      .internal-element3 {
+        width: 62px;
+        height: 18px;
+        /* background-color: rgb(0, 128, 255); */
+        font-size: 18px;
+      }
+      .internal-element4 {
+        width: 114px;
+        height: 23px;
+        /* background-color: rgb(255, 0, 238); */
+        margin-top: 2px;
+        font-size: 18px;
+      }
+      .header-internal2 {
+        width: 810px;
+        height: 46px;
+        /* background-color: rgb(43, 226, 64); */
+        display: flex;
+        gap: 19px;
+        align-items: center;
+      }
+      .internal2-element1 {
+        width: 343px;
+        height: 40px;
+        margin-left: 111px;
+        display: flex;
+        border-radius: 6px;
+        justify-content: center;
+        align-items: center;
+        gap: 11px;
+        background: #eaeaea;
+      }
+      .internal2-element1 input {
+        height: 32px;
+        width: 227px;
+        border: none;
+        outline: none;
+        background: transparent;
+      }
+      .internal2-element1 span {
+        font-size: 31px;
+        margin-top: 5px;
+      }
+      .internal2-element2 {
+        width: 10px;
+        height: 12px;
+        /* background-color: blue; */
+      }
+      .internal2-element3 {
+        width: 50px;
+        height: 40px;
+        /* background-color: rgb(123, 255, 0); */
+      }
+      .login {
+        padding: 5px;
+        margin-top: 5px;
+      }
+
+      .internal2-element4 {
+        width: 26px;
+        height: 40px;
+        /* background-color: rgb(0, 128, 255); */
+      }
+      .internal2-element4 i {
+        margin-top: 9px;
+        font-size: 23px;
+      }
+      .internal2-element5 {
+        width: 27px;
+        height: 40px;
+        /* background-color: rgb(255, 0, 238); */
+      }
+      .internal2-element5 span {
+        margin-top: 7px;
+        font-size: 27px;
+      }
+      .main-container {
+        /* width: 1536px; */
+        height: 1207px;
+        /* background-color: black; */
+      }
+      .main-container1 {
+        /* width: 1536px; */
+        height: 55px;
+        /* background-color: brown; */
+      }
+      .main-container2 {
+        /* width: 1536px; */
+        height: 1133px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+      }
+      .main1 {
+        /* background-color: aqua; */
+        /* width: 272px; */
+        height: 116px;
+        gap: 12px;
+        display: flex;
+        margin-left: 116px;
+        margin-top: 36px;
+      }
+      .list {
+        width: 700px;
+        height: 41px;
+        /* background-color: blue; */
+        margin-left: 138px;
+      }
+      .list li {
+        display: flex;
+        height: 42px;
+        gap: 50px;
+        align-items: center;
+      }
+      .main2 {
+        /* background-color: rgb(91, 228, 60); */
+        /* width: 272px; */
+        height: 1036px;
+        display: flex;
+        gap: 21px;
+      }
+
+      .main2-box2 {
+        width: 925px;
+        /* background-color: rgb(64, 60, 54); */
+        display: flex;
+        gap: 33px;
+        flex-wrap: wrap;
+      }
+      .img {
+        width: 286px;
+        height: 500px;
+        /* background-color: brown; */
+      }
+      .picture {
+        width: 284px;
+        height: 353px;
+        /* background-color: aquamarine; */
+        position: relative;
+      }
+      .picture-oversize {
+        width: 101px;
+        height: 15px;
+        font-size: 12px;
+        position: absolute;
+        top: 0;
+        color: rgb(255, 255, 255);
+        background: rgba(82, 82, 82, 0.8);
+        text-align: center;
+      }
+      .picture-rating {
+        position: relative;
+        top: -39px;
+        display: flex;
+        gap: 2px;
+        width: 47px;
+        background-color: #8080805c;
+        height: 17px;
+        justify-content: center;
+      }
+      .star-icon {
+        font-size: 10px;
+        margin-top: 4px;
+        color: #ffff00b0;
+      }
+      .picture img {
+        width: 283px;
+      }
+      .img-content {
+        width: 285px;
+        height: 137px;
+        background-color: white;
+      }
+      .content1 {
+        width: 283px;
+        height: 50px;
+        /* background-color: aqua; */
+        display: flex;
+        align-items: end;
+      }
+      .content-child1 {
+        /* background-color: blueviolet; */
+        width: 250px;
+        height: 43px;
+      }
+      .content-child2 {
+        /* background-color: blue; */
+        width: 27px;
+        height: 41px;
+      }
+      .content2 {
+        display: flex;
+        width: 107px;
+        height: 25px;
+        /* background-color: aquamarine; */
+        align-items: baseline;
+      }
+      .content2-child1 {
+        width: 46px;
+        height: 23px;
+        /* background-color: greenyellow; */
+        font-size: 20px;
+      }
+      .content2-child2 {
+        width: 46px;
+        height: 23px;
+        color: #9d9d9d;
+        /* background-color: #5d2fff; */
+        text-decoration-line: line-through;
+      }
+      .content3 {
+        width: 232px;
+        height: 36px;
+        /* background-color: forestgreen; */
+        display: flex;
+        margin-top: 8px;
+        gap: 4px;
+        font-size: 14px;
+      }
+      .content3-child1 {
+        margin-left: 7px;
+      }
+      .content4 {
+        font-size: 13px;
+        width: 93px;
+        height: 16px;
+
+        color: rgb(115, 115, 115);
+        /* background-color: azure; */
+        border: 1px solid black;
+        /* color: black; */
+      }
+
+      .main2-box1 {
+        display: grid;
+        grid-template-rows: repeat(12, 50px);
+        width: 290px;
+        margin-left: 120px;
+      }
+
+      .main2-items {
+        /* background-color: red; */
+        border-bottom: 0.5px solid #e5e5e5;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .main2-items p {
+        margin-left: 8px;
+        color: #333333;
+      }
+      /* .main2-items span {
+        margin-right: 29px;
+      } */
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header1">
+        <div class="header-child1">
+          <div class="rightside-element">
+            <div class="headerchild1-element">
+              <h5>Offers</h5>
+            </div>
+
+            <div class="headerchild1-element">
+              <h5>Fanbook</h5>
+            </div>
+            <div class="headerchild1-element">
+              <span
+                class="material-symbols-outlined"
+                style="width: 10px; font-size: 16px"
+              >
+                phone_iphone
+              </span>
+              <h5>Download App</h5>
+            </div>
+            <div class="headerchild1-element">
+              <h5>TriBe Membership</h5>
+            </div>
+          </div>
+          <div class="leftelement-child">
+            <div class="headerchild1-element">
+              <h5>Contact Us</h5>
+            </div>
+            <div class="headerchild1-element">
+              <h5>Track Order</h5>
+            </div>
+          </div>
+        </div>
+        <div class="header-child2">
+          <div class="header-internal1">
+            <div class="internal-element1">
+              <img
+                src="https://images.bewakoof.com/web/ic-desktop-bwkf-trademark-logo.svg"
+                alt="No Data Found"
+              />
+            </div>
+            <div class="for-element234">
+              <div class="internal-element2">Men</div>
+              <div class="internal-element3">Women</div>
+              <div class="internal-element4">Mobile Covers</div>
+            </div>
+          </div>
+          <div class="header-internal2">
+            <div class="internal2-element1">
+              <span class="material-symbols-outlined"> search </span>
+              <input
+                type="search"
+                placeholder="Search by product, category or collection"
+              />
+            </div>
+            <div class="internal2-element2">|</div>
+            <div class="internal2-element3">
+              <div class="login">Login</div>
+            </div>
+            <div class="internal2-element4">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="internal2-element5">
+              <span class="material-symbols-outlined"> shopping_bag </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-container">
+      <div class="main-container1">
+        <div class="list">
+          <li>
+            <ol>
+              Home
+            </ol>
+            <ol>
+              Women Clothing
+            </ol>
+            <ol>
+              Oversized T-shirts
+            </ol>
+            <ol>
+              Women's Oversized T-Shirts
+            </ol>
+          </li>
+        </div>
+      </div>
+      <div class="main-container2">
+        <div class="main1">
+          <h1>Women's Oversized T-Shirts</h1>
+          <span style="margin-top: 4px; font-size: 27px; color: #949494"
+            >(600)</span
+          >
+        </div>
+        <div class="main2">
+          <div class="main2-box1">
+            <div class="main2-items">
+              <p>Category</p>
+              <span class="material-symbols-outlined"> expand_more </span>
+            </div>
+            <div class="main2-items">
+              <p>Sizes</p>
+              <span class="material-symbols-outlined"> expand_more </span>
+            </div>
+            <div class="main2-items">
+              <p>Brand</p>
+              <span class="material-symbols-outlined"> expand_more </span>
+            </div>
+            <div class="main2-items">
+              <p>Color</p>
+              <span class="material-symbols-outlined"> expand_more </span>
+            </div>
+            <div class="main2-items">
+              <p>Design</p>
+              <span class="material-symbols-outlined"> expand_more </span>
+            </div>
+            <div class="main2-items">
+              <p>Fit</p>
+              <span class="material-symbols-outlined"> expand_more </span>
+            </div>
+            <div class="main2-items">
+              <p>Sleeve</p>
+              <span class="material-symbols-outlined"> expand_more </span>
+            </div>
+            <div class="main2-items">
+              <p>Neck</p>
+              <span class="material-symbols-outlined"> expand_more </span>
+            </div>
+            <div class="main2-items">
+              <p>Type</p>
+              <span class="material-symbols-outlined"> expand_more </span>
+            </div>
+            <div class="main2-items">
+              <p>Ratings</p>
+              <span class="material-symbols-outlined"> expand_more </span>
+            </div>
+            <div class="main2-items">
+              <p>Discount</p>
+              <span class="material-symbols-outlined"> expand_more </span>
+            </div>
+            <div class="main2-items">
+              <p>Sort By</p>
+              <span class="material-symbols-outlined"> expand_more </span>
+            </div>
+          </div>
+          <div class="main2-box2">
+            <div class="img">
+              <div class="picture">
+                <img
+                  src="https://images.bewakoof.com/t640/women-s-brown-calm-down-graphic-printed-oversized-t-shirt-596130-1686321647-1.jpg"
+                  alt=""
+                />
+                <div class="picture-oversize">
+                  <span>OVERSIZED FIT</span>
+                </div>
+                <div class="picture-rating">
+                  <span>4.5</span>
+                  <div class="star-icon">
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="img-content">
+                <div class="content1">
+                  <div class="content-child1">
+                    <div
+                      class="text"
+                      style="
+                        font-size: 17px;
+                        height: 22px;
+                        color: rgb(115, 115, 115);
+                      "
+                    >
+                      Bewakoof®
+                    </div>
+                    <div
+                      class="text"
+                      style="
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 14px;
+                        color: rgb(115, 115, 115);
+                      "
+                    >
+                      Women's Brown Calm Down Graphic Printed Oversized T-shirt
+                    </div>
+                  </div>
+
+                  <div class="content-child2">
+                    <span
+                      class="material-symbols-outlined"
+                      style="margin-top: 8px"
+                    >
+                      favorite
+                    </span>
+                  </div>
+                </div>
+                <div class="content2">
+                  <div class="content2-child1">₹499</div>
+                  <div class="content2-child2">1299</div>
+                </div>
+                <div class="content3">
+                  <div class="content3-child1">₹459</div>
+                  <div class="content3-child2">For TriBe Members</div>
+                </div>
+                <div class="content4">100% COTTON</div>
+              </div>
+            </div>
+            <div class="img">
+              <div class="picture">
+                <img
+                src=https://images.bewakoof.com/t640/women-s-white-attempting-to-adult-graphic-printed-oversized-t-shirt-530393-1682403578-1.jpg
+                alt="" />
+                <div class="picture-oversize">
+                  <span>OVERSIZED FIT</span>
+                </div>
+                <div class="picture-rating">
+                  <span>4.5</span>
+                  <div class="star-icon">
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="img-content">
+                <div class="content1">
+                  <div class="content-child1">
+                    <div
+                      class="text"
+                      style="
+                        font-size: 17px;
+                        height: 22px;
+                        color: rgb(115, 115, 115);
+                      "
+                    >
+                      Bewakoof®
+                    </div>
+                    <div
+                      class="text"
+                      style="
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 14px;
+                        color: rgb(115, 115, 115);
+                      "
+                    >
+                      Women's Brown Calm Down Graphic Printed Oversized T-shirt
+                    </div>
+                  </div>
+
+                  <div class="content-child2">
+                    <span
+                      class="material-symbols-outlined"
+                      style="margin-top: 8px"
+                    >
+                      favorite
+                    </span>
+                  </div>
+                </div>
+                <div class="content2">
+                  <div class="content2-child1">₹499</div>
+                  <div class="content2-child2">1299</div>
+                </div>
+                <div class="content3">
+                  <div class="content3-child1">₹459</div>
+                  <div class="content3-child2">For TriBe Members</div>
+                </div>
+                <div class="content4">100% COTTON</div>
+              </div>
+            </div>
+            <div class="img">
+              <div class="picture">
+                <img
+                src=https://images.bewakoof.com/t640/women-s-purple-sunday-we-do-nothing-graphic-printed-oversized-t-shirt-519315-1667492458-1.jpg
+                alt="" />
+                <div class="picture-oversize">
+                  <span>OVERSIZED FIT</span>
+                </div>
+                <div class="picture-rating">
+                  <span>4.5</span>
+                  <div class="star-icon">
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="img-content">
+                <div class="content1">
+                  <div class="content-child1">
+                    <div
+                      class="text"
+                      style="
+                        font-size: 17px;
+                        height: 22px;
+                        color: rgb(115, 115, 115);
+                      "
+                    >
+                      Bewakoof®
+                    </div>
+                    <div
+                      class="text"
+                      style="
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 14px;
+                        color: rgb(115, 115, 115);
+                      "
+                    >
+                      Women's Brown Calm Down Graphic Printed Oversized T-shirt
+                    </div>
+                  </div>
+
+                  <div class="content-child2">
+                    <span
+                      class="material-symbols-outlined"
+                      style="margin-top: 8px"
+                    >
+                      favorite
+                    </span>
+                  </div>
+                </div>
+                <div class="content2">
+                  <div class="content2-child1">₹499</div>
+                  <div class="content2-child2">1299</div>
+                </div>
+                <div class="content3">
+                  <div class="content3-child1">₹459</div>
+                  <div class="content3-child2">For TriBe Members</div>
+                </div>
+                <div class="content4">100% COTTON</div>
+              </div>
+            </div>
+            <div class="img">
+              <div class="picture">
+                <img
+                src=https://images.bewakoof.com/t640/women-s-purple-i-don-t-give-a-sip-graphic-printed-oversized-t-shirt-516919-1667491467-1.jpg
+                alt="" />
+                <div class="picture-oversize">
+                  <span>OVERSIZED FIT</span>
+                </div>
+                <div class="picture-rating">
+                  <span>4.5</span>
+                  <div class="star-icon">
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="img-content">
+                <div class="content1">
+                  <div class="content-child1">
+                    <div
+                      class="text"
+                      style="
+                        font-size: 17px;
+                        height: 22px;
+                        color: rgb(115, 115, 115);
+                      "
+                    >
+                      Bewakoof®
+                    </div>
+                    <div
+                      class="text"
+                      style="
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 14px;
+                        color: rgb(115, 115, 115);
+                      "
+                    >
+                      Women's Brown Calm Down Graphic Printed Oversized T-shirt
+                    </div>
+                  </div>
+
+                  <div class="content-child2">
+                    <span
+                      class="material-symbols-outlined"
+                      style="margin-top: 8px"
+                    >
+                      favorite
+                    </span>
+                  </div>
+                </div>
+                <div class="content2">
+                  <div class="content2-child1">₹499</div>
+                  <div class="content2-child2">1299</div>
+                </div>
+                <div class="content3">
+                  <div class="content3-child1">₹459</div>
+                  <div class="content3-child2">For TriBe Members</div>
+                </div>
+                <div class="content4">100% COTTON</div>
+              </div>
+            </div>
+            <div class="img">
+              <div class="picture">
+                <img
+                src=https://images.bewakoof.com/t640/women-s-black-anti-hero-graphic-printed-oversized-t-shirt-556742-1669375109-1.jpg
+                alt="" />
+                <div class="picture-oversize">
+                  <span>OVERSIZED FIT</span>
+                </div>
+                <div class="picture-rating">
+                  <span>4.5</span>
+                  <div class="star-icon">
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="img-content">
+                <div class="content1">
+                  <div class="content-child1">
+                    <div
+                      class="text"
+                      style="
+                        font-size: 17px;
+                        height: 22px;
+                        color: rgb(115, 115, 115);
+                      "
+                    >
+                      Bewakoof®
+                    </div>
+                    <div
+                      class="text"
+                      style="
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 14px;
+                        color: rgb(115, 115, 115);
+                      "
+                    >
+                      Women's Brown Calm Down Graphic Printed Oversized T-shirt
+                    </div>
+                  </div>
+
+                  <div class="content-child2">
+                    <span
+                      class="material-symbols-outlined"
+                      style="margin-top: 8px"
+                    >
+                      favorite
+                    </span>
+                  </div>
+                </div>
+                <div class="content2">
+                  <div class="content2-child1">₹499</div>
+                  <div class="content2-child2">1299</div>
+                </div>
+                <div class="content3">
+                  <div class="content3-child1">₹459</div>
+                  <div class="content3-child2">For TriBe Members</div>
+                </div>
+                <div class="content4">100% COTTON</div>
+              </div>
+            </div>
+            <div class="img">
+              <div class="picture">
+                <img
+                  src="https://images.bewakoof.com/t640/women-s-brown-calm-down-graphic-printed-oversized-t-shirt-596130-1686321647-1.jpg"
+                  alt=""
+                />
+                <div class="picture-oversize">
+                  <span>OVERSIZED FIT</span>
+                </div>
+                <div class="picture-rating">
+                  <span>4.5</span>
+                  <div class="star-icon">
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="img-content">
+                <div class="content1">
+                  <div class="content-child1">
+                    <div
+                      class="text"
+                      style="
+                        font-size: 17px;
+                        height: 22px;
+                        color: rgb(115, 115, 115);
+                      "
+                    >
+                      Bewakoof®
+                    </div>
+                    <div
+                      class="text"
+                      style="
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 14px;
+                        color: rgb(115, 115, 115);
+                      "
+                    >
+                      Women's Brown Calm Down Graphic Printed Oversized T-shirt
+                    </div>
+                  </div>
+
+                  <div class="content-child2">
+                    <span
+                      class="material-symbols-outlined"
+                      style="margin-top: 8px"
+                    >
+                      favorite
+                    </span>
+                  </div>
+                </div>
+                <div class="content2">
+                  <div class="content2-child1">₹499</div>
+                  <div class="content2-child2">1299</div>
+                </div>
+                <div class="content3">
+                  <div class="content3-child1">₹459</div>
+                  <div class="content3-child2">For TriBe Members</div>
+                </div>
+                <div class="content4">100% COTTON</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

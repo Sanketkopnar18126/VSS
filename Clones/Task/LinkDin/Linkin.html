@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LinkeDin</title>
+  
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="top">
+      <header>
+        <div class="header1">
+          <div class="logo-linkdin">
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div class="search-header">
+            <i class="fa-solid fa-magnifying-glass" style="font-size: 14px;
+            margin-left: 14px;
+            margin-top: 2px;"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+        </div>
+        <div class="header2">
+          <div class="home" style="position: relative ; color: #616161;">
+            <!-- <i class="fa-solid fa-circle-dot" style="
+                 color: red;
+position: absolute;
+right: 192px;
+top: -3px;
+left: 20px;
+
+                "></i> -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false" style="margin-left: 5px;">
+              <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"></path>
+            </svg>
+            <p class="text-home" style="font-size: 13px;
+              font-family: Roboto;">Home</p>
+          </div>
+          <div class="my-network" style="color: #616161;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false" style="margin-left: 16px;">
+              <path d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z"></path>
+            </svg>
+            <p class="mynetwork-txt" style="font-size: 13px;
+              font-family: Roboto;">My Network</p>
+          </div>
+          <div class="jobs" style="color: #616161;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false" style="margin-left: 3px;">
+              <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"></path>
+            </svg>
+            <p class="job-txt" style="font-size: 13px;
+              font-family: Roboto;">Jobs</p>
+          </div>
+          <div class="mesg" style="color: #616161;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false" style="margin-left: 18px;">
+              <path d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"></path>
+            </svg>
+            <p class="messg-txt" style="font-size: 13px;
+              font-family: Roboto;">Messaging</p>
+          </div>
+          <div class="notifications" style="position: relative;  color: #616161;;">
+            <!-- <i class="fa-regular fa-8" style="
+                  color: white;
+                  background: red;
+                  width: 22px;
+                  text-align: center;
+                  border-radius: 30px;
+                  position: absolute;
+                  left: 32px;
+                  top: -1px;
+                  font-size: 12px;
+                "></i> -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false" style="  margin-left: 22px;">
+              <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"></path>
+            </svg>
+            <p class="notification-txt" style="font-size: 13px;
+              font-family: Roboto;">
+              Notifications
+            </p>
+          </div>
+          <div class="me" style="position: relative ; color: #616161;">
+            <i class="fa-solid fa-caret-down" style="
+                 position: absolute;
+right: -2px;
+top: 26px;
+font-size: 14px;
+                "></i>
+            <img src="https://media.licdn.com/dms/image/D5635AQGXW0U7XhrOLA/profile-framedphoto-shrink_100_100/0/1660002666757?e=1690772400&v=beta&t=ZVPi-5qqicQuf_CQnUNND_JLjAVSuA-Ujm6ozjJbWQ0"  style="width: 23px;
+            border-radius: 12px; margin-left: 15px;">
+            <p class="me-txt" style="font-size: 13px;
+              font-family: Roboto; text-align: center">
+              Me
+            </p>
+          </div>
+          <div class="header3">
+            <div class="for-buisenes" style="margin-left: 20px; position: relative;color: #616161;">
+              <i class="fa-solid fa-caret-down" style="
+                    position: absolute;
+                    right: -13px;
+                    top: 29px;
+                    font-size: 14px;
+                  "></i>
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+              <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
+            </svg>
+              <p class="for-business-txt" style="font-size: 15px">
+                For Business
+              </p>
+            </div>
+            <div class="try-primum" style="
+                  font-size: 15px;
+                  width: 107px;
+                  text-decoration-line: underline;
+                  color: red;
+                ">
+              Try Premium for free
+            </div>
+          </div>
+        </div>
+       
+      </header>
+    </div>
+    <div class="middle">
+      <div class="right-middle">
+    
+
+        <div class="right-middle1">
+          <div class="bg" style="  height: 58px;
+          background: #A0B4B7;
+          width: 211px;
+          border-top-right-radius: 9px;
+          border-top-left-radius: 9px;
+        ">
+          
+          </div>
+          <div class="right-txt1">
+
+            <div class="right-txt1-details" style="
+                  display: flex;
+
+                
+                  width: 211px;
+height: 130px;
+border-bottom: 1px solid #EBEBEB;
+                ">
+                
+              <div class="right-txt-child" style="
+                    display: flex;
+flex-direction: column;
+align-items: center;
+width: 243px;
+height: 105px;
+justify-content: end;
+gap: 15px;
+                  ">
+                <img
+                  src="https://media.licdn.com/dms/image/D5635AQGXW0U7XhrOLA/profile-framedphoto-shrink_100_100/0/1660002666757?e=1690772400&v=beta&t=ZVPi-5qqicQuf_CQnUNND_JLjAVSuA-Ujm6ozjJbWQ0"
+                  alt="No Data Found" />
+                <span class="welcome" style="font-weight: bolder;
+                font-size: 17px;">Welcome,Sanket!</span>
+                <span class="add-photo" style="color: #2B7BCA;
+                  font-family: Roboto;
+                  font-size: 13px;">Add a Photo</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-txt2">
+            <div class="conection" style="display: flex; gap: 102px">
+              <span class="connection-txt" style="font-size: 15px;
+                color: gray;">Conections</span>
+              <p style="color: blue;">153</p>
+            </div>
+            <div class="grow-network">
+              <span class="grow-txt" style="font-size: 15px;">Grow Your Network</span>
+            </div>
+          </div>
+          <div class="right-txt3">
+
+            <div class="acess" style="margin-left: 10px; margin-top: 15px">
+
+              <span class="acess-txt" style="font-size: 12px;font-family: Roboto; ">Access exclusive tools &
+                insights</span>
+            </div>
+            <div class="get-hired" style="
+                  width: 193px;
+                  width: 193px;
+                  margin-left: 18px;
+                  width: 193px;
+                  margin-left: 21px;
+                  margin-top: 3px;
+                  text-decoration-line: underline;
+                ">
+              <i class="fa-solid fa-square" style="
+                    position: absolute;
+left: 8px;
+font-size: 13px;
+top: 41px;
+color: #E7A33E;
+                  "></i>
+              <span class="get-hired-txt" style="font-size: 15px;
+                 margin-left: 7px;">Try Premium free.</span>
+            </div>
+          </div>
+          <div class="right-txt4" style="
+                height: 41px;
+                width: 200px;
+                display: flex;
+                align-items: center;
+              ">
+            <i class="fa-solid fa-bookmark" style="color: #666;
+              font-size: 13px;
+              margin-left: 4px;"></i>
+
+            <span class="my-items" style="margin-left: 6px;font-size: 16px;">My Items</span>
+          </div>
+        </div>
+        <div class="right-middle2">
+<div class="recent">
+  <span class="recent-txt">Recent</span>
+
+</div>
+<div class="recent-content">
+  <div class="recent-top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="group-small" data-supported-dps="16x16" fill="currentColor" style="width: 49px;">
+      <path d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z"></path>
+      <circle cx="8" cy="4" r="2"></circle>
+      <circle cx="12.5" cy="5.5" r="1.5"></circle>
+      <path d="M3.75 8h-.5A1.25 1.25 0 002 9.25V14h3V9.25A1.25 1.25 0 003.75 8z"></path>
+      <circle cx="3.5" cy="5.5" r="1.5"></circle>
+    </svg>
+   <p style="font-size: 12px;
+   font-size: 12px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;">Python Developer ● Full Stack Developer ● Web Developer ● Software Developer  ● Data Analyst</p>
+
+  </div>
+  <div class="recent-bottom">
+    <div class="list-recent">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="hashtag-small" data-supported-dps="16x16" fill="currentColor" style="width: 16px;">
+        <path d="M6.65 11h2l-.33 3h2l.33-3H14V9h-3.13l.26-2H14V5h-2.65l.33-3h-2l-.33 3h-2l.33-3h-2l-.33 3H2v2h3.13l-.26 2H2v2h2.65l-.33 3h2zm.48-4h2l-.26 2h-2z"></path>
+      </svg>
+      <span>interested</span>
+    </div>
+    <div class="list-recent">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="hashtag-small" data-supported-dps="16x16" fill="currentColor" style="width: 16px;">
+        <path d="M6.65 11h2l-.33 3h2l.33-3H14V9h-3.13l.26-2H14V5h-2.65l.33-3h-2l-.33 3h-2l.33-3h-2l-.33 3H2v2h3.13l-.26 2H2v2h2.65l-.33 3h2zm.48-4h2l-.26 2h-2z"></path>
+      </svg>
+      <span>followme</span>
+    </div>
+    <div class="list-recent">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="hashtag-small" data-supported-dps="16x16" fill="currentColor" style="width: 16px;">
+        <path d="M6.65 11h2l-.33 3h2l.33-3H14V9h-3.13l.26-2H14V5h-2.65l.33-3h-2l-.33 3h-2l.33-3h-2l-.33 3H2v2h3.13l-.26 2H2v2h2.65l-.33 3h2zm.48-4h2l-.26 2h-2z"></path>
+      </svg>
+<span>follow</span>
+    </div>
+    <div class="list-recent">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="hashtag-small" data-supported-dps="16x16" fill="currentColor" style="width: 16px;">
+        <path d="M6.65 11h2l-.33 3h2l.33-3H14V9h-3.13l.26-2H14V5h-2.65l.33-3h-2l-.33 3h-2l.33-3h-2l-.33 3H2v2h3.13l-.26 2H2v2h2.65l-.33 3h2zm.48-4h2l-.26 2h-2z"></path>
+      </svg>
+      <span>cfbr</span>
+    </div>
+  </div>
+  
+</div>
+<div class="group">
+  <div class="group-txt">
+    <span>Groups</span>
+  </div>
+  <div class="groups-name">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="group-small" data-supported-dps="16x16" fill="currentColor" style="width: 49px;">
+      <path d="M8.5 7h-1A1.5 1.5 0 006 8.5V14h4V8.5A1.5 1.5 0 008.5 7zM12.75 8h-.5A1.25 1.25 0 0011 9.25V14h3V9.25A1.25 1.25 0 0012.75 8z"></path>
+      <circle cx="8" cy="4" r="2"></circle>
+      <circle cx="12.5" cy="5.5" r="1.5"></circle>
+      <path d="M3.75 8h-.5A1.25 1.25 0 002 9.25V14h3V9.25A1.25 1.25 0 003.75 8z"></path>
+      <circle cx="3.5" cy="5.5" r="1.5"></circle>
+    </svg>
+    <p style="font-size: 12px;
+   font-size: 12px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;">Python Developer ● Full Stack Developer ● Web Developer ● Software Developer  ● Data Analyst</p>
+  </div>
+  <div class="see-all">
+    <span>See all</span>
+  </div>
+
+</div>
+<div class="event-right">
+
+  <span style="font-size: 13px;
+  color: blue;">Events</span>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+    <path d="M14 9H9v5H7V9H2V7h5V2h2v5h5z"></path>
+  </svg>
+</div>
+<div class="follow-content">
+  <div class="follow-txt">
+    
+    <span style="font-size: 13px;
+    color: blue;">Followed Hashtags</span>
+  </div>
+  <div class="follow-hash-content">
+    <div class="follw-img">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="hashtag-small" data-supported-dps="16x16" fill="currentColor" style="width: 16px;">
+        <path d="M6.65 11h2l-.33 3h2l.33-3H14V9h-3.13l.26-2H14V5h-2.65l.33-3h-2l-.33 3h-2l.33-3h-2l-.33 3H2v2h3.13l-.26 2H2v2h2.65l-.33 3h2zm.48-4h2l-.26 2h-2z"></path>
+      </svg>
+    <span>interested</span>
+  </div>
+  <div class="follw-img">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="hashtag-small" data-supported-dps="16x16" fill="currentColor" style="width: 16px;">
+      <path d="M6.65 11h2l-.33 3h2l.33-3H14V9h-3.13l.26-2H14V5h-2.65l.33-3h-2l-.33 3h-2l.33-3h-2l-.33 3H2v2h3.13l-.26 2H2v2h2.65l-.33 3h2zm.48-4h2l-.26 2h-2z"></path>
+    </svg>
+    <span>followme</span>
+   </div>
+   <div class="follw-img">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="hashtag-small" data-supported-dps="16x16" fill="currentColor" style="width: 16px;">
+      <path d="M6.65 11h2l-.33 3h2l.33-3H14V9h-3.13l.26-2H14V5h-2.65l.33-3h-2l-.33 3h-2l.33-3h-2l-.33 3H2v2h3.13l-.26 2H2v2h2.65l-.33 3h2zm.48-4h2l-.26 2h-2z"></path>
+    </svg>
+    <span>follow</span>
+  </div>
+  <div class="show-more">
+    <span style="font-size: 13px;">Show more</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="chevron-down-small" data-supported-dps="16x16" fill="currentColor" style="width: 16px;">
+      <path d="M1 5l7 4.61L15 5v2.39L8 12 1 7.39z"></path>
+    </svg>
+  </div>
+  </div>
+</div>
+
+<div class="discover-more">
+  <span style="font-size: 15px;">Discover more</span>
+</div>
+        </div>
+      </div>
+      <div class="centre-middle">
+        <div class="centre-middle1">
+          <div class="centre-middle1-top-content">
+            <div class="centre-img">
+              <img
+                src="https://media.licdn.com/dms/image/D5635AQGXW0U7XhrOLA/profile-framedphoto-shrink_100_100/0/1660002666757?e=1690772400&v=beta&t=ZVPi-5qqicQuf_CQnUNND_JLjAVSuA-Ujm6ozjJbWQ0"
+                alt="">
+            </div>
+            <button class="start-post" >
+              <span style="margin-left: 15px;color: #5E5E5E;">Start a post</span>
+            </button>
+          </div>
+          <div class="centre-middle1-bottom-content">
+<div class="photo">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  id="image-medium"
+  data-supported-dps="24x24"
+  fill="currentColor"
+>
+  <path
+    d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z"
+  ></path>
+</svg>
+<span class="photo-txt">Photo</span>
+</div>
+<div class="video">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="video-medium" data-supported-dps="24x24" fill="currentColor">
+    <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z"></path>
+  </svg>
+  <span class="video-txt">Video</span>
+</div>
+<div class="event">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+    <path d="M3 3v15a3 3 0 003 3h12a3 3 0 003-3V3zm13 1.75A1.25 1.25 0 1114.75 6 1.25 1.25 0 0116 4.75zm-8 0A1.25 1.25 0 116.75 6 1.25 1.25 0 018 4.75zM19 18a1 1 0 01-1 1H6a1 1 0 01-1-1V9h14zm-5.9-3a1 1 0 00-1-1H12a3.12 3.12 0 00-1 .2l-1-.2v-3h3.9v1H11v1.15a3.7 3.7 0 011.05-.15 1.89 1.89 0 012 1.78V15a1.92 1.92 0 01-1.84 2H12a1.88 1.88 0 01-2-1.75 1 1 0 010-.25h1a.89.89 0 001 1h.1a.94.94 0 001-.88z"></path>
+  </svg>
+  <span class="event-txt">Event</span>
+</div>
+<div class="read-article">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+    <path d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"></path>
+  </svg>
+  <span class="read-article-txt">Write article</span>
+</div>
+          </div>
+        </div>
+
+        <div class="centre-middle2">
+          <div class="sortby">
+            <span class="sort-txt">Sort by:</span>
+            <span class="top-txt">Top</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="caret-small" data-supported-dps="16x16" fill="currentColor">
+              <path d="M8 11L3 6h10z" fill-rule="evenodd"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="centre-middle3">
+          <div class="articles1">
+            <div class="icons">
+              <div class="img">
+                <img src="https://media.licdn.com/dms/image/D4D03AQFRu0WF4N8Fbg/profile-displayphoto-shrink_100_100/0/1675188799364?e=1693440000&v=beta&t=7qW0aSaHTTSYdXWoMNANCsEk-1E4sGUfw6j_hbP2tRQ" alt="">
+              </div>
+
+              <div class="name-txt">
+                <span class="full-name" >Deepak Kumar
+                  <span style="font-family: Roboto;
+                  font-size: 13px;
+                  font-weight: normal;"> • 1st</span>
+                </span>
+                <span class="career-txt" style="white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: block;
+                font-family: Roboto;
+font-size: 12px;
+font-weight: normal;">Test Analyst at Infosys || SDET || Automation Testing || Manual Testing || Selenium || Java || Helping Hand</span>
+                <span class="time" style="font-family: Roboto;
+                font-size: 12px;
+                font-weight: normal;
+                height: 22px;
+                display: block;
+                width: 57px;
+                display: flex;
+                gap: 3px;">16m • 
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                    <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+                  </svg>
+                </span>
+               
+              </div>
+
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false" style="position: relative;
+               left: 93px;
+               top: -21px;
+               fill: #5E5E5E;">
+                <path d="M14 12a2 2 0 11-2-2 2 2 0 012 2zM4 10a2 2 0 102 2 2 2 0 00-2-2zm16 0a2 2 0 102 2 2 2 0 00-2-2z"></path>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false" style="position: relative;
+              left: 100px;
+              top: -20px;
+              fill: #5E5E5E;">
+              
+                <path d="M14 3.41L9.41 8 14 12.59 12.59 14 8 9.41 3.41 14 2 12.59 6.59 8 2 3.41 3.41 2 8 6.59 12.59 2z"></path>
+              </svg>
+            
+            </div>
+            <div class="description-txt">
+              <span style="margin-left: 10px;
+              ">I’m happy to share that I’m starting a new position as Test Analyst at Infosys!</span>
+              <img src="https://media.licdn.com/media/AAYQAQQSAAgAAQAAAAAAACKYFNB5zdTqTlavWXkK0XvX-A.jpg" alt="">
+            </div>
+            <div class="comment-icons">
+              <div class="for-comment1">
+                <div class="inside1">
+                  <img src="https://static.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="">  
+  <img src="https://static.licdn.com/sc/h/b1dl5jk88euc7e9ri50xy5qo8" style="position: relative;
+  left: -9px;" alt="">
+<span  style="font-weight: inherit;
+font-family: Roboto;
+font-size: 12px;">
+  
+  Naresh Bhansali and 130 others
+
+</span>
+</div>
+<div class="inside2">
+  <span style="font-weight: inherit;
+  font-family: Roboto;
+  font-size: 12px;">27 comments</span>
+</div>
+              </div>
+              <div class="purpose-border">
+
+              </div>
+              <div class="for-comment2">
+                <div class="like">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="thumbs-up-outline-medium" data-supported-dps="24x24" fill="currentColor">
+                    <path d="M19.46 11l-3.91-3.91a7 7 0 01-1.69-2.74l-.49-1.47A2.76 2.76 0 0010.76 1 2.75 2.75 0 008 3.74v1.12a9.19 9.19 0 00.46 2.85L8.89 9H4.12A2.12 2.12 0 002 11.12a2.16 2.16 0 00.92 1.76A2.11 2.11 0 002 14.62a2.14 2.14 0 001.28 2 2 2 0 00-.28 1 2.12 2.12 0 002 2.12v.14A2.12 2.12 0 007.12 22h7.49a8.08 8.08 0 003.58-.84l.31-.16H21V11zM19 19h-1l-.73.37a6.14 6.14 0 01-2.69.63H7.72a1 1 0 01-1-.72l-.25-.87-.85-.41A1 1 0 015 17l.17-1-.76-.74A1 1 0 014.27 14l.66-1.09-.73-1.1a.49.49 0 01.08-.7.48.48 0 01.34-.11h7.05l-1.31-3.92A7 7 0 0110 4.86V3.75a.77.77 0 01.75-.75.75.75 0 01.71.51L12 5a9 9 0 002.13 3.5l4.5 4.5H19z"></path>
+                    <span>Like</span>
+                </div>
+                <div class="comment">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                    <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                  </svg>
+                  <span>Comment</span>
+                </div>
+                <div class="repost">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="repost-medium" data-supported-dps="24x24" fill="currentColor">
+                    <path d="M13.96 5H6c-.55 0-1 .45-1 1v10H3V6c0-1.66 1.34-3 3-3h7.96L12 0h2.37L17 4l-2.63 4H12l1.96-3zm5.54 3H19v10c0 .55-.45 1-1 1h-7.96L12 16H9.63L7 20l2.63 4H12l-1.96-3H18c1.66 0 3-1.34 3-3V8h-1.5z"></path>
+                  </svg>
+                  <span>Repost</span>
+                </div>
+                <div class="send">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                    <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"></path>
+                  </svg>
+                  <span>Send</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="articles2">
+  <div class="icons">
+              <div class="img">
+                <img src="https://media.licdn.com/dms/image/D4D03AQEos-pxaSx_6w/profile-displayphoto-shrink_100_100/0/1673350201349?e=1694044800&v=beta&t=-IstYRJnjm7ra3BtgHvXwOWxGp2ylyk8SG-DVIGDrZM" alt="">
+              </div>
+
+              <div class="name-txt">
+                <span class="full-name" >Pramod Dutta
+                  <span style="font-family: Roboto;
+                  font-size: 13px;
+                  font-weight: normal;"> • Following</span>
+                </span>
+                <span class="career-txt" style="white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: block;
+                font-family: Roboto;
+font-size: 12px;
+font-weight: normal;">SDET Manager at Tekion | 100k+ Subs On YT</span>
+                <span class="time" style="font-family: Roboto;
+                font-size: 12px;
+                font-weight: normal;
+                height: 22px;
+                display: block;
+                width: 57px;
+                display: flex;
+                gap: 3px;">16m • 
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                    <path d="M8 1a7 7 0 107 7 7 7 0 00-7-7zM3 8a5 5 0 011-3l.55.55A1.5 1.5 0 015 6.62v1.07a.75.75 0 00.22.53l.56.56a.75.75 0 00.53.22H7v.69a.75.75 0 00.22.53l.56.56a.75.75 0 01.22.53V13a5 5 0 01-5-5zm6.24 4.83l2-2.46a.75.75 0 00.09-.8l-.58-1.16A.76.76 0 0010 8H7v-.19a.51.51 0 01.28-.45l.38-.19a.74.74 0 01.68 0L9 7.5l.38-.7a1 1 0 00.12-.48v-.85a.78.78 0 01.21-.53l1.07-1.09a5 5 0 01-1.54 9z"></path>
+                  </svg>
+                </span>
+               
+              </div>
+
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false" style="position: relative;
+               left: 93px;
+               top: -21px;
+               fill: #5E5E5E;">
+                <path d="M14 12a2 2 0 11-2-2 2 2 0 012 2zM4 10a2 2 0 102 2 2 2 0 00-2-2zm16 0a2 2 0 102 2 2 2 0 00-2-2z"></path>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false" style="position: relative;
+              left: 100px;
+              top: -20px;
+              fill: #5E5E5E;">
+              
+                <path d="M14 3.41L9.41 8 14 12.59 12.59 14 8 9.41 3.41 14 2 12.59 6.59 8 2 3.41 3.41 2 8 6.59 12.59 2z"></path>
+              </svg>
+            
+            </div>
+            <div class="description-txt">
+              <span style="margin-left: 27px;">👀 Heard the rumor about software testing is dead?</span>
+              <img src="https://media.licdn.com/dms/image/D4D22AQHRb1ZvtuJwwQ/feedshare-shrink_800/0/1688359057561?e=1691625600&v=beta&t=1WMNo-3NhwZ8V91ksKEecwMtQBJQHjaXWmXlriGU2VY" alt="">
+            </div>
+            <div class="comment-icons">
+              <div class="for-comment1">
+                <div class="inside1">
+                  <img src="https://static.licdn.com/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="">  
+  <img src="https://static.licdn.com/sc/h/b1dl5jk88euc7e9ri50xy5qo8" style="position: relative;
+  left: -9px;" alt="">
+<span  style="font-weight: inherit;
+font-family: Roboto;
+font-size: 12px;">
+  
+  Naresh Bhansali and 130 others
+
+</span>
+</div>
+<div class="inside2">
+  <span style="font-weight: inherit;
+  font-family: Roboto;
+  font-size: 12px;">27 comments</span>
+</div>
+              </div>
+              <div class="purpose-border">
+
+              </div>
+              <div class="for-comment2">
+                <div class="like">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="thumbs-up-outline-medium" data-supported-dps="24x24" fill="currentColor">
+                    <path d="M19.46 11l-3.91-3.91a7 7 0 01-1.69-2.74l-.49-1.47A2.76 2.76 0 0010.76 1 2.75 2.75 0 008 3.74v1.12a9.19 9.19 0 00.46 2.85L8.89 9H4.12A2.12 2.12 0 002 11.12a2.16 2.16 0 00.92 1.76A2.11 2.11 0 002 14.62a2.14 2.14 0 001.28 2 2 2 0 00-.28 1 2.12 2.12 0 002 2.12v.14A2.12 2.12 0 007.12 22h7.49a8.08 8.08 0 003.58-.84l.31-.16H21V11zM19 19h-1l-.73.37a6.14 6.14 0 01-2.69.63H7.72a1 1 0 01-1-.72l-.25-.87-.85-.41A1 1 0 015 17l.17-1-.76-.74A1 1 0 014.27 14l.66-1.09-.73-1.1a.49.49 0 01.08-.7.48.48 0 01.34-.11h7.05l-1.31-3.92A7 7 0 0110 4.86V3.75a.77.77 0 01.75-.75.75.75 0 01.71.51L12 5a9 9 0 002.13 3.5l4.5 4.5H19z"></path>
+                    <span>Like</span>
+                </div>
+                <div class="comment">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                    <path d="M7 9h10v1H7zm0 4h7v-1H7zm16-2a6.78 6.78 0 01-2.84 5.61L12 22v-4H8A7 7 0 018 4h8a7 7 0 017 7zm-2 0a5 5 0 00-5-5H8a5 5 0 000 10h6v2.28L19 15a4.79 4.79 0 002-4z"></path>
+                  </svg>
+                  <span>Comment</span>
+                </div>
+                <div class="repost">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="repost-medium" data-supported-dps="24x24" fill="currentColor">
+                    <path d="M13.96 5H6c-.55 0-1 .45-1 1v10H3V6c0-1.66 1.34-3 3-3h7.96L12 0h2.37L17 4l-2.63 4H12l1.96-3zm5.54 3H19v10c0 .55-.45 1-1 1h-7.96L12 16H9.63L7 20l2.63 4H12l-1.96-3H18c1.66 0 3-1.34 3-3V8h-1.5z"></path>
+                  </svg>
+                  <span>Repost</span>
+                </div>
+                <div class="send">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                    <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"></path>
+                  </svg>
+                  <span>Send</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="left-middle">
+        <div class="inner-part1" style="
+              width: 281px;
+              height: 319px;
+              border-radius: 8px;
+              display: flex;
+              flex-direction: column;
+              border: 1px solid #0000003b;
+              background: white;
+            ">
+          <div class="left-middle1">
+            <h2 class="linkdin-news" style="margin-left: 15px;">
+              <span class="news-txt" style=" font-size: 18px;
+              font-family: Roboto;">LinkedIn News</span>
+            </h2>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="signal-notice-small" data-supported-dps="16x16" fill="currentColor" style="width: 16px;">
+              <path d="M12 2H4a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2zm-3 8v2H7.5A1.5 1.5 0 016 10.5a1.56 1.56 0 01.1-.5l1.08-3h2.13l-1.09 3zm0-3.75A1.25 1.25 0 1110.25 5 1.25 1.25 0 019 6.25z"></path>
+            </svg>
+          </div>
+          <div class="left-middle2">
+            <div class="news-content">
+              <i class="fa-solid fa-0" style="
+                    font-size: 7px;
+
+                    position: relative;
+                    top: 5px;
+                    margin-left: 9px;
+                  "></i>
+              <div class="for-news" style="width: 241px ;">
+                <span class="news1">Top trends in AI, finance, and retail</span>
+                <span class="news">Top news</span>
+              </div>
+            </div>
+
+            <div class="news-content">
+              <i class="fa-solid fa-0" style="
+                    font-size: 7px;
+
+                    position: relative;
+                    top: 5px;
+                    margin-left: 9px;
+                  "></i>
+              <div class="for-news" style="width: 241px">
+                <span class="news1">Decoding the stock market's rally</span>
+                <span class="news">6h ago </span>
+              </div>
+            </div>
+
+            <div class="news-content">
+              <i class="fa-solid fa-0" style="
+                    font-size: 7px;
+
+                    position: relative;
+                    top: 5px;
+                    margin-left: 9px;
+                  "></i>
+              <div class="for-news" style="width: 241px">
+                <span class="news1">Universities begin UG admissions</span>
+                <span class="news">5h ago </span>
+              </div>
+            </div>
+            <div class="news-content">
+              <i class="fa-solid fa-0" style="
+                    font-size: 7px;
+
+                    position: relative;
+                    top: 5px;
+                    margin-left: 9px;
+                  "></i>
+              <div class="for-news" style="width: 241px">
+                <span class="news1">Tech top priority for India-US ties</span>
+                <span class="news">3h ago </span>
+              </div>
+            </div>
+            <button class="show-more1" style="
+                  width: 120px;
+height: 24px;
+margin-left: 27px;
+border: none;
+background: transparent;
+color: #858585;
+
+                ">
+              <span style="font-size: 15px;
+                width: 90px;">Show More</span>
+              <i class="fa-solid fa-chevron-down" style="margin-left: 2px;
+                  margin-top: 4px;"></i>
+            </button>
+          </div>
+        </div>
+        <div class="inner-part2">
+          <ul class="list">
+            <li>
+              <span>About</span>
+            </li>
+            <li><span style="color: blue;">Accessibility</span></li>
+            <li><span>Help Center</span></li>
+            <li class="for-arrow" style="position: relative;">
+              <span class="material-symbols-outlined" style="position: absolute;
+                left: 82px;
+                top: -3px;
+                font-size: 21px;
+                margin-left: 4px;">
+                arrow_drop_down
+              </span>
+              <span>Privacy & Terms</span>
+            </li>
+            <li><span style="margin-left: 9px">Ad Choices</span></li>
+            <li><span>Advertising</span></li>
+            <li class="for-arrow2" style="position: relative;"> <span class="material-symbols-outlined" style="position: absolute;
+                left: 96px;
+                top: -3px;
+                font-size: 21px;
+                margin-left: 4px;">
+                arrow_drop_down
+              </span>
+              <span>Buiseness Services</span>
+            </li>
+            <li><span>Get Linkdin App</span></li>
+            <li><span>More</span></li>
+          </ul>
+          </ul>
+        </div>
+        <div class="inner-part-3" style="display: flex;
+        justify-content: center;
+        gap: 4px;
+        margin-top: 4px;
+        align-items: center;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 14" data-supported-dps="56x14" fill="currentColor" class="mercado-match" width="56" height="14" focusable="false" style="fill: blue;">
+            <g>
+              <path class="background-mercado" d="M22.1 8.2l3.09 3.8h-2.44L20 8.51V12h-2V2h2v5.88L22.54 5h2.55zm-8-3.4A2.71 2.71 0 0011.89 6V5H10v7h2V8.73a1.74 1.74 0 011.66-1.93C14.82 6.8 15 7.94 15 8.73V12h2V8.29c0-2.2-.73-3.49-2.86-3.49zM32 8.66a4.22 4.22 0 010 .44h-5.25v.07a1.79 1.79 0 001.83 1.43 2.51 2.51 0 001.84-.69l1.33 1a4.31 4.31 0 01-3.25 1.29 3.49 3.49 0 01-3.7-3.75 3.58 3.58 0 013.76-3.65C30.44 4.8 32 6.13 32 8.66zm-1.86-.86a1.46 1.46 0 00-1.59-1.4 1.64 1.64 0 00-1.8 1.4zM2 2H0v10h6v-2H2zm36 0h2v10h-1.89v-.7a2.44 2.44 0 01-2 .9 3.41 3.41 0 01-3.31-3.7 3.36 3.36 0 013.3-3.7 2.62 2.62 0 011.9.7zm.15 6.5a1.63 1.63 0 00-1.62-1.85A1.76 1.76 0 0034.9 8.5a1.76 1.76 0 001.63 1.85 1.63 1.63 0 001.62-1.85zM8 1.8A1.27 1.27 0 006.75 3a1.25 1.25 0 002.5 0A1.27 1.27 0 008 1.8zM7 12h2V5H7zM56 1v12a1 1 0 01-1 1H43a1 1 0 01-1-1V1a1 1 0 011-1h12a1 1 0 011 1zM46 5h-2v7h2zm.25-2a1.25 1.25 0 00-2.5 0 1.25 1.25 0 002.5 0zM54 8.29c0-2.2-.73-3.49-2.86-3.49A2.71 2.71 0 0048.89 6V5H47v7h2V8.73a1.74 1.74 0 011.66-1.93C51.82 6.8 52 7.94 52 8.73V12h2z"></path>
+            </g>
+          </svg>
+          <span style="font-family: Roboto;
+          font-size: 13px;">LinkedIn Corporation © 2023</span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+
+</html>
